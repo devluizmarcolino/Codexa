@@ -6,12 +6,88 @@
 }
 
 :root {
-    --primary-color: #fff3db;
-    --secundary-color: #e7e4d5;
-    --terciary-color: #d3c8b4;
-    --details-color: #c84648;
-    --details-color-hover: #a63f41;
-    --details-two-color: #703e3b;
-    --details-two-color-hover: #492a28;
-    --white-color: #f5ecec;
+    --green-primary: #1ABC9C;       
+    --green-dark: #148F77;         
+    --green-dark-rgba: rgba(20, 143, 118, 0.39);         
+    --green-light: #76D7C4;        
+
+    --black: #000000;              
+    --white: #FFFFFF;              
+    --gray-light: #F4F4F4;         
+    --gray-medium: #B2BABB;        
+    --gray-dark: #5D6D7E;          
+
+    --gradient-green: linear-gradient(to right, var(--green-dark), var(--green-primary));
+    --gradient-green-gray: linear-gradient(to right, var(--green-primary), var(--gray-dark));
+    --gradient-green-light: linear-gradient(to right, var(--green-light), var(--white));
+}
+
+.custom-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(to right, #2c2929 1px, transparent 1px),
+                    linear-gradient(to bottom, #2c2929 1px, transparent 1px);
+  background-size: 6rem 4rem;
+}
+
+.custom-radial-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: radial-gradient(circle 500px at 50% 200px, var(--green-dark-rgba), transparent);
+}
+
+span {
+    color: var(--green-primary);
+}
+header {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--gray-light);
+    transition: 0.3s;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a i {
+    font-size: 2rem;
+    color: var(--gray-light);
+    transition: 0.3s;
+    text-align: center;
+}
+
+nav a i:hover {
+    color: var(--green-dark);
 }
