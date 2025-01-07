@@ -65,7 +65,7 @@ header {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
 }
@@ -150,7 +150,7 @@ nav a i {
 
 #learn-more-btn {
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 4rem;
     color: #fff;
     background: var(--gradient-green);
@@ -185,11 +185,101 @@ nav a i {
 
 @media (max-width: 768px) {
     .home-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #learn-more-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.875rem;
+        font-size: 1.5rem;
+    }
+}
+
+.about-section {
+    padding: 4rem 2rem;
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--green-dark);
+}
+
+.about-description {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-card-icon {
+    font-size: 3rem;
+    color: var(--green-primary);
+    margin-bottom: 1rem;
+}
+
+.about-card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-dark);
+}
+
+.about-card-content p {
+    font-size: 1rem;
+    color: var(--gray-medium);
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .about-card-icon {
+        font-size: 2.5rem;
+    }
+
+    .about-card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-card-content p {
+        font-size: 0.9rem;
     }
 }
