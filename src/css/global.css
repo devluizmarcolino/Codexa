@@ -23,7 +23,7 @@
 }
 
 .custom-container {
-  position: fixed; /* Alterado de absolute para fixed */
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -111,7 +111,7 @@ nav a i {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 2rem;
+    /* padding: 2rem; */
     color: #fff;
     height: 100vh;
 }
@@ -190,7 +190,7 @@ nav a i {
     }
 
     #learn-more-btn {
-        font-size: 1.5rem;
+        font-size: 0.8567rem;
     }
 }
 
