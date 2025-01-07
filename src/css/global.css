@@ -111,8 +111,9 @@ nav a i {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 0 2rem;
     color: #fff;
+    height: 100vh;
 }
 
 .home-content {
