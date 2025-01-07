@@ -215,6 +215,10 @@ nav a i {
     line-height: 1.6;
 }
 
+.home-section, .about-section, .services-section, .benefits-subsection {
+    overflow: hidden;
+}
+
 .about-cards {
     display: flex;
     justify-content: center;
@@ -281,6 +285,207 @@ nav a i {
     }
 
     .about-card-content p {
+        font-size: 0.9rem;
+    }
+}
+
+.services-section {
+    padding: 4rem 2rem;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #00ffcc;
+}
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 255, 204, 0.2);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #00ffcc;
+}
+
+.service-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00ffcc;
+}
+
+.service-text p {
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.benefits-subsection {
+    margin-top: 4rem;
+    background: var(--green-dark);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-subsection h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.services-description, .benefits-description {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(34, 34, 34, 0.7));
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    border-left: 5px solid #00ffcc;
+    border-right: 5px solid #00ffcc;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-description::before, .benefits-description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 255, 204, 0.2), rgba(0, 255, 204, 0.1));
+    z-index: 0;
+    pointer-events: none;
+}
+
+.services-description p, .benefits-description p {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .services-description, .benefits-description {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+.benefits-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.benefits-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.benefits-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-card-icon {
+    font-size: 3rem;
+    color: var(--green-primary);
+    margin-bottom: 1rem;
+}
+
+.benefits-card-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-dark);
+}
+
+.benefits-card-content p {
+    font-size: 1rem;
+    color: var(--gray-medium);
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 2rem 1rem;
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
+    }
+
+    .services-description {
+        font-size: 1rem;
+    }
+
+    .services-card {
+        padding: 1.5rem;
+    }
+
+    .services-card-icon {
+        font-size: 2.5rem;
+    }
+
+    .services-card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .services-card-content p {
+        font-size: 0.9rem;
+    }
+
+    .benefits-subsection h3 {
+        font-size: 1.5rem;
+    }
+
+    .benefits-description {
+        font-size: 1rem;
+    }
+
+    .benefits-card {
+        padding: 1.5rem;
+    }
+
+    .benefits-card-icon {
+        font-size: 2.5rem;
+    }
+
+    .benefits-card-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .benefits-card-content p {
         font-size: 0.9rem;
     }
 }
